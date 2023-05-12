@@ -1,11 +1,11 @@
 {
-  "name": "nestjs-stripe",
-  "version": "1.0.1",
+  "name": "nest-stripe",
+  "version": "1.0.2",
   "description": "Provides an injectable Stripe client to nestjs modules",
-  "repository": "https://github.com/dhaspden/nestjs-stripe",
+  "repository": "https://github.com/ikoujar/nestjs-stripe",
   "author": {
-    "name": "Dylan Aspden",
-    "url": "http://github.com/dhaspden"
+    "name": "Ibrahim Koujar",
+    "url": "http://github.com/ikoujar"
   },
   "license": "MIT",
   "main": "./lib/index.js",
