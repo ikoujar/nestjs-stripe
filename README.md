@@ -1,6 +1,6 @@
 <p align="center">
   <h3 align="center">
-    nestjs-stripe
+    nest-stripe
   </h3>
 
   <p align="center">
@@ -8,9 +8,9 @@
   </p>
 
   <p align="center">
-    <img src="https://circleci.com/gh/dhaspden/nestjs-stripe.svg?style=svg">
-    <a href="https://codecov.io/gh/dhaspden/nestjs-stripe">
-      <img src="https://codecov.io/gh/dhaspden/nestjs-stripe/branch/master/graph/badge.svg" />
+    <img src="https://circleci.com/gh/dhaspden/nest-stripe.svg?style=svg">
+    <a href="https://codecov.io/gh/dhaspden/nest-stripe">
+      <img src="https://codecov.io/gh/dhaspden/nest-stripe/branch/master/graph/badge.svg" />
     </a>
   </p>
 </p>
@@ -28,7 +28,7 @@
 
 ## About
 
-`nestjs-stripe` implements a module, `StripeModule`, which when imported into
+`nest-stripe` implements a module, `StripeModule`, which when imported into
 your nestjs project provides a Stripe client to any class that injects it. This
 lets Stripe be worked into your dependency injection workflow without having to
 do any extra work outside of the initial setup.
@@ -36,16 +36,16 @@ do any extra work outside of the initial setup.
 ## Installation
 
 ```bash
-npm install --save nestjs-stripe
+npm install --save nest-stripe
 ```
 
 ## Getting Started
 
-The simplest way to use `nestjs-stripe` is to use `StripeModule.forRoot`
+The simplest way to use `nest-stripe` is to use `StripeModule.forRoot`
 
 ```typescript
 import { Module } from '@nestjs-common';
-import { StripeModule } from 'nestjs-stripe';
+import { StripeModule } from 'nest-stripe';
 
 @Module({
   imports: [
@@ -63,7 +63,7 @@ custom decorator
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { InjectStripe } from 'nestjs-stripe';
+import { InjectStripe } from 'nest-stripe';
 import Stripe from 'stripe';
 
 @Injectable()
@@ -76,7 +76,7 @@ Asynchronous setup is also supported
 
 ```typescript
 import { Module } from '@nestjs-common';
-import { StripeModule } from 'nestjs-stripe';
+import { StripeModule } from 'nest-stripe';
 
 @Module({
   imports: [
@@ -127,9 +127,3 @@ make sure to follow the below guidelines before getting your hands dirty.
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Acknowledgements
-
-- [nestjs](https://nestjs.com)
-- [stripe-node](https://github.com/stripe/stripe-node)
-
-Copyright &copy; 2021 Dylan Aspden
